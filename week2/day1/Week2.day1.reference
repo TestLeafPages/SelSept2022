@@ -1,0 +1,84 @@
+What is Automation?
+    - Reduce Manual efforts (mechanically repeating)
+    - Save time and money
+
+Selenium: (Jason Huggins - 2004 - IDE - Opensource)
+
+- Execute in multiple platforms
+- Execute in multiple browsers
+- Write scripts in any lang (Java, Python, C#, Ruby,..)
+
+2009 - Simon Steward - WebDriver --> Selenium WebDriver
+
+
+Mercury --> QTP/ UFT (Web and Windows) --> Commercial (10000 USD)
+
+Other Tools:
+1. Playwright
+2. Cypress - JS
+3. Webdriver.io - JS
+4. Puppeter
+
+Cannot do?
+- Can automate excel sheet? No - (Apache POI - Java library)
+- Can automate mainframe applications? No (WinAppDriver - Java library)
+- Can it to talk to database? No (JDBC - Java library)
+- Can it automate mobile based apps? No (Appium)
+- Can we performance testing? No (JMeter/ Gatling/ Load Runner)
+- Can we use API testing? Partially Yes (Rest Assured)
+
+
+What if suppose each browser vendor provides different function names like below
+Edge     - launch
+Chrome   - open
+Firefox  - invoke
+Safari   - get
+--> Follow W3C standards
+
+Understand HTML structure
+TagName - purple (input)
+Attribute - brown (id, name)
+AttributeValues - blue (Details about id, name)
+Text - black (In between your tags)
+
+
+WebElement
+
+Locators (8):
+1. id --> attribute --> 1st Priority (do not prefer id if it contains changing numbers)
+2. name --> attribute --> 2nd Priority
+3. linktext --> it should have an anchor tag (a)
+4. class --> attribute --> 4th Priority
+
+Exceptions:
+IllegalStateException - When we do not set the driver
+NoSuchElementException - When the element with locator value is not found
+
+
+WebDriver methods:
+1. get
+2. findElement
+3. manage
+4. close
+5. getTitle --> String
+6. getCurrentUrl --> String
+
+WebElement methods:
+1. sendKeys - enters text/ appends text
+2. click
+3. clear - clear the text in the text field
+4. isEnabled - boolean
+5. getAttribute("value") - String
+6. getText
+7. isDisplayed - the element is visible or not
+
+Dropdown:
+- It has a select tag
+- Select tag will have option tags
+
+1. Find the element of select tag
+2. Convert the element to select class
+3. Choose the value from dropdown
+    - index
+    - visible text
+    - value 
