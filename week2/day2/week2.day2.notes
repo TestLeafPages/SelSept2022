@@ -1,0 +1,123 @@
+xPath: XML Path
+
+    1. Absolute xPath
+        - It starts with '/'
+        - tagName is mandatory
+        - start from pydoc import pager
+from root tag
+        - index for xPath starts with 1
+
+/html/body/div[2]/div[2]/div/form/p/input
+    - when new tag is introduces, xPath breaks
+    - Difficult to write
+
+    2. Relative xPath
+        - It starts with '//'
+        - tagName is mandatory
+
+Basic xPaths:
+1. Attribute based xPath:
+    - //tagName[@attributeName='attributeValue']
+
+    Ex: //input[@type='password']
+
+2. Text based xPath:
+    - //tagName[text()='textValue']
+
+    Ex: //label[text()='Username']
+
+3. Partial Attribute based xPath:
+    - //tagName[contains(@attributeName,'attributeValue')]
+
+    Ex: //input[contains(@id,'user')]
+
+4. Partial Text based xPath:
+    - //tagName[contains(text(),'textValue')]
+
+    Ex: //a[contains(text(),'CRM/SFA')]
+
+5. Index/ Collection based xPath:
+
+    - (//tagName)[index]
+    - (//tagName[@attribute='attributeValue'])[index]
+    - (//tagName[text()='textValue'])[index]
+
+    Ex: (//input[@id='username'])[1]
+    (//input[@class='inputLogin'])[2]
+
+    - do not prefer when index goes beyond 5
+
+
+Advanced xPaths:
+
+1. Parent to Child xPath:
+    - basicxPathForParent/childTagName
+
+    Ex: //p[@class='top']/label
+        //p[@class='top']/label[@for='username']
+
+2. child to Parent xPath:
+    - basicxPathForChild/parent::parentTagName
+
+    Ex: //p[@class='top']/parent::form
+
+3. grandParent to grandChild xPath:
+    - basicxPathForGrandParent//grandChildTagName
+
+    Ex: //form[@id='login']//label[@for='username']
+        //form[@id='login']//label[text()='Username']
+        //form[@id='login']//input[@id='password']
+        //div[@id='form']//label[@for='username']
+
+4. grandChild to grandParent xPath:
+    - basicxPathForGrandChild/ancestor::grandParentTagName
+
+    Ex: //input[@id='username']/ancestor::form
+        //input[@id='username']/ancestor::div
+
+5. ElderSibling to youngerSibling xPath:
+    - basicxPathForElderSibling/following-sibling::youngerSiblingTagName
+
+    Ex: //label[text()='Username']/following-sibling::input
+
+6. YoungerSibling to ElderSibling xPath:
+    - basicxPathForYoungerSibling/preceding-sibling::elderSiblingTagName
+
+    Ex: //input[@id='username']/preceding-sibling::label
+
+7. ElderCousin to YoungerCousin xPath:
+    - basicxPathForElderCousin/following::youngerCousinTagName
+
+    Ex: //label[text()='Username']/following::input[@id='password']
+        //label[text()='Username']/following::label
+
+8. YoungerCousin to ElderCousin xPath:
+    - basicxPathForYoungerCousin/preceding::elderCousinTagName
+
+    Ex: //label[text()='Password']/preceding::input
+
+
+Document Object Model - DOM
+
+InvalidSelectorException - when xPath syntax is wrong
+
+
+1. First Resulting Lead id in Find Leads page
+
+    - //div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a
+    - //table[@class='x-grid3-row-table']//a
+
+2. Myntra.com --> Men --> Jeans --> xPath for Flying Machine
+    - //label[text()='Flying Machine']/div
+    - //input[@value='Flying Machine']/following-sibling::div
+
+
+Waits:
+1. Implicit Wait
+2. Explicit Wait
+
+
+Thread.sleep(10 mins)
+
+Cab --> 9 am --> max Threshold (10 mins)
+    --> if can comes by 9: 05 you can board
