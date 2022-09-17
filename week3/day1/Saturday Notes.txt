@@ -1,0 +1,138 @@
+
+Saturday Agenda
+
+2.30 to 3.40 PM     :   Java OOPS Intro, Abstraction
+3.40 to 4.10 PM     :   (Break Out) Interface, Abstract Class
+4.10 to 4.40 PM     :   Inheritance
+4.50 to 5.05 PM     :   Tea Break
+5.05 to 5.30 PM     :   (Break Out) Inheritance
+5.30 to 6.00 PM     :   Polymorphism
+6.00 to 6.20 PM     :   (Break Out) Polymorphism
+6.20 to 6.30 PM     :   Encapsulation
+6.30 to 6.45 PM     :   (Break Out) Encapsulation
+
+Major take aways: Interview questions related to OOPS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Java OOPS 
+
+OOPs - Object Oriented Programming
+
+Object-oriented programming (OOP) is a programming model based on the concept of "objects", which can contain data and logic: data -> variables and logic -> methods
+
+Major Benefits:
+
+- Modularity
+- Reusability
+- Flexibility
+- Efficient
+
+4 Concepts 
+
+- Abstraction
+- Inheritance
+- Polymorphism
+- Encapsulation 
+
+
+Abstraction
+
+Architect - Design -> Paper !
+Can you live in the design?
+Design -> Build 
+
+Any development should start with design.
+
+Design -> Interface
+Partial Implementation -> Abstract Class
+Full Implementation -> Concrete Class
+
+Keyword to connect interface to class: implements (abstraction)
+Keyword to connect (abs) class to class: extends (inheritance)
+
+Watch (Interface)  - 3 methods !!
+SmartWatch (Abstract Class) - Implement only 2 methods, add one abstract 
+AppleWatch (Concrete Class) - Implement all the left methods (2)
+
+Class -> MyMatch with main method and create object for AppleWatch
+and confirm you can access all 4 methods !!
+
+
+Object -> Super Most class always !!
+
+Vehicle -> 2 Methods
+Truck -> 1 Method
+AshokLeyland -> 1 Method
+Bus -> 1 Method
+Tata -> 1 Method
+
+MyTravel -> main method -> confirm you can inherit !
+
+Bus Class -> Add another method to overload the existing method.
+Tata Class -> Override the method from Vehicle and confirm
+
+Create a new main method -> Call Tata -> Confirm Overridden. 
+
+Polymorphism
+
+- Many forms of implementation
+
+Types:
+
+- Overloading
+- Overriding
+
+Overloading
+
+- Same method name, Same method return type, Same method access modifier
+- In the same class
+- But with a different argument (number / data type)!
+- Purpose: Better clarity / Verbose.
+
+Overriding
+
+- Works only within inheritance
+- Sub class method overrides the super class method
+- Parent method signature should be same in the child as well.
+- Purpose: Override old feature with new in specific class. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Encapsulation
+
+- Data hiding !
+- private !!
+
+
+
