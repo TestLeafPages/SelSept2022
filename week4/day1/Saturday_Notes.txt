@@ -1,0 +1,65 @@
+Today's Topics:
+1. Alerts
+2. Frmaes
+3. Windows
+4. Taking a screenshot
+5. Constructor
+
+Alerts - It is a popup/ dialog which provides some information
+
+	1. Modal Dialog
+		a) simple alert - information
+			- accept() (positive), getText()
+		b) confirm alert - confirmation
+			- accept() (positive), getText(), dismiss()
+		c) Prompt alert - Data collection + confirmation
+			- accept() (positive), getText(), dismiss(), sendKeys()
+
+Characteristics:
+	1. Cannot inspect an alert
+	2. Cannot interact with the main window unless the alert is handled
+
+Limitation:
+	1. Cannot take a snapshot
+	
+Exceptions:
+1. UnHandledAlertExecption - when alert is not handled and trying to 
+							perform action on main window
+2. NoAlertPresentException - when alert is not present and performing
+							alert operation
+
+
+	2. Non-Modal Dialog
+		- Sweet Alert
+
+
+Frames: Dom inside another Dom or html inside another html
+
+tag names - frame/ iframe
+
+	- index
+	- id or name
+	- WebElement
+	
+NoSuchFrameException
+NoSuchElementException
+
+
+Classroom1:
+1. Navigate to https://www.w3schools.com/js/tryit.asp?filename=tryjs_prompt
+2. Click on Try it button
+3. Enter your name in alert box
+4. accept the alert
+5. Verify your name under Try it button
+
+
+Window Handling:
+
+- Both windows and tabs are treated same
+
+
+ClassRoom2:
+1. Navigate to https://www.irctc.co.in/nget/train-search
+2. Accept the alert
+3. Click on Flights
+4. Get the title of new window and close it
