@@ -1,0 +1,8 @@
+<suite name="leaftaps"> 
+	<test name="leads" verbose="5"> 
+		<classes>
+			<class name="testcase.CreateLead"></class>
+			<class name="testcase.EditLead"></class>
+		</classes>
+	</test>
+</suite>
