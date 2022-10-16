@@ -1,0 +1,22 @@
+<suite name="leaftaps">
+	<listeners>
+		<listener class-name="week6.day1.RetryFailedTests"></listener>
+	</listeners>
+	<parameter name="url" value="http://leaftaps.com/opentaps/"></parameter>
+	<parameter name="username" value="DemoSalesManager"></parameter>
+	<parameter name="password" value="crmsfa"></parameter>
+	<test name="chromeTests" verbose="5">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="week5.day2.CreateLead"></class>
+			<!-- <class name="testcase.EditLead"></class> -->
+		</classes>
+	</test>
+	<test name="firefoxTests" verbose="5">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="week5.day2.CreateLead"></class>
+			<!-- <class name="testcase.EditLead"></class> -->
+		</classes>
+	</test>
+</suite>
