@@ -1,0 +1,79 @@
+Cucumber: BDD (Behavioural Driver Development)
+
+
+TDD - Test Driven Development
+
+ - Write the test cases first
+ - Get the approval for the test cases
+ - Development should be based on the test cases
+ 
+Cons:
+	- Lot of negative test cases covered rather than positive
+	
+	
+ATDD - Acceptance Test Driven Development
+	- Write the acceptance testcases first
+	- Develop the software based on it
+	
+Cons:
+	- Communication gap between the technical and non-technical team
+	
+	
+BDD - Behavioural Driver Development
+	- To address the communication gap between tech and non-tech teams
+	
+	- Wirte acceptance test cases first using common language
+	
+
+Gherkin keywords:
+Feature - Describes the functionality of the application
+Scenario - Describe a behaviour/ testcase
+Given - Represent a pre condition
+When - Represent the test condition/ step
+Then - Represent the expected result (positive scenario)
+But - Represent the expected result (negative scenario)
+Background - pre-condition/ common steps (applicable with scenarios of
+ same feature file)
+
+
+Login Steps:
+
+Given Launch the browser
+Given Load the URL
+Given Maximize the window
+When Enter the Username
+When Enter the Password
+When Click on Login
+Then Verify Home page is displayed
+
+
+3 Layers:
+ - Features  			File to write the testcases
+ - Step Definitions		Implement the testcases using Selenium/Java
+ - Runner				TestNG for execution (JUnit)
+ 
+Exceptions:
+ - UndefinedStepException
+ - DuplicateStepDefinitionException
+ - InvalidMethodException
+ - NullPointerException
+
+TestNG Assertions:
+ - Validation or verification
+ - Comparing the actual and expected results
+ 
+ - Hard Assertion
+ - Soft Assertion
+ 
+TestNG Listeners:
+
+Retry:
+	- IRetryAnalyzer (automatically retrying the failed test)
+	- AnnotationTransformer (set attribute values during runtime)
+	
+Cross Broswer Testing:
+
+Explicit Wait:
+	- specific to each action
+	- WebDriverWait
+	- TimeoutException
