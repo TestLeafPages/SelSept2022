@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="5" name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.testleaf.testcases.TC002_CreateLead">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+          <include name="runLogin"/>
+        </methods>
+      </class> <!-- com.testleaf.testcases.TC002_CreateLead -->
+      <class name="com.testleaf.testcases.TC001_Login">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+          <include name="runLogin"/>
+        </methods>
+      </class> <!-- com.testleaf.testcases.TC001_Login -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
